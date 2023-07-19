@@ -27,7 +27,7 @@ namespace Casgem.ApiLayer.Controllers
             _categoryService.TInsert(category);
             return Ok();
         }
-        [HttpDelete]
+        [HttpDelete]                    
         public IActionResult DeleteCategory(int id)
         {
             var value = _categoryService.TGetByID(id);

@@ -12,10 +12,10 @@ namespace Casgem.DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-4FNRCPJ\\SQLEXPRESS;initial catalog=CasgemApiDb;integrated security=true;");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-4FNRCPJ\\SQLEXPRESS;initial catalog=DbCasgemApi;integrated security=true;");
         }
-        public DbSet<Customer> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Category> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }

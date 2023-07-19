@@ -4,7 +4,7 @@
 
 namespace Casgem.DataAccessLayer.Migrations
 {
-    public partial class mig_add_first : Migration
+    public partial class mig_api_test : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
